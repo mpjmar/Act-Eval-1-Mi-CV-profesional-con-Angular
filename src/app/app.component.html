@@ -1,0 +1,82 @@
+<header>
+  <p>CV {{ this.nombre }}</p>
+  <nav>
+    <a href="#main">Main</a>
+    <a href="#footer">Footer</a>
+  </nav>
+</header>
+
+<div class="main">
+  <aside>
+    <img ngSrc="foto.jpg" width="400" height="400" alt="foto">
+    <ul>
+      <li>{{ this.ciudad }}</li>
+      <li>{{ this.telefono }}</li>
+      <li>{{ this.mail }}</li>
+      <li>{{ this.github }}</li>
+      <li>{{ idiomas }}</li>
+    </ul>
+  </aside>
+
+  <main>
+    <div>
+      <h3>Sobre mi</h3>
+      <p>Estudiante del Ciclo Formativo de Grado
+        Superior en Desarrollo de Aplicaciones
+        Multiplataforma (DAM), en transición
+        hacia el sector tecnológico. Tras más de
+        20 años de experiencia profesional en los
+        ámbitos administrativo y de atención al
+        cliente, decidí reorientar mi carrera
+        profesional hacia el desarrollo de
+        software. Actualmente complemento mis
+        estudios con formación especializada en
+        desarrollo y tecnologías como DevOps.
+        Me motiva especialmente el aprendizaje
+        continuo, la resolución de problemas y
+        la aplicación de mis conocimientos en
+        proyectos reales aportando mis capacidades
+        de organización, adaptación y compromiso
+        adquiridos a lo largo de mi trayectoria
+        profesional.</p>
+    </div>
+
+    <div>
+      <h3>Experiencia profesional</h3>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Formación</h3>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Tecnologías</h3>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </main>
+</div>
+
+<footer>© CV desarrollado con Angular {{ this.fecha | date: 'dd/MM/yyyy' }}</footer>

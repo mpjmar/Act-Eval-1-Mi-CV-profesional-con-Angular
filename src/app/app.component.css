@@ -1,0 +1,54 @@
+header {
+  background-color:lightcyan;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+header>nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  width: 30%;
+  background-color: darkcyan;
+  color: white;
+  padding: 25px;
+}
+
+li {
+  padding: 10px;
+}
+
+main {
+  flex: 1;
+  background-color: azure;
+  padding: 25px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+div {
+  margin-bottom: 35px;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  background-color: darkcyan;
+  color: aliceblue;
+}
