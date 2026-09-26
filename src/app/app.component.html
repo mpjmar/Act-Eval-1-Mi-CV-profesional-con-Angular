@@ -1,5 +1,6 @@
 <header>
-  <p>CV {{ this.nombre }}</p>
+  <h1>CV {{ this.nombre }}</h1>
+  <h3>Desarrolladora de Aplicaciones Multiplataforma</h3>
   <nav>
     <a href="#main">Main</a>
     <a href="#footer">Footer</a>
@@ -8,75 +9,88 @@
 
 <div class="main">
   <aside>
-    <img ngSrc="foto.jpg" width="400" height="400" alt="foto">
+    <img ngSrc="foto.jpg" width="200" height="235" alt="foto" />
     <ul>
       <li>{{ this.ciudad }}</li>
       <li>{{ this.telefono }}</li>
       <li>{{ this.mail }}</li>
-      <li>{{ this.github }}</li>
-      <li>{{ idiomas }}</li>
+      <li><a href="{{" this.github }}>GitHub</a></li>
+      @for (idioma of idiomas; track idioma) {
+        <li>{{ idioma }}</li>
+      }
     </ul>
   </aside>
 
   <main>
-    <div>
+    <div class="sobre-mi">
       <h3>Sobre mi</h3>
-      <p>Estudiante del Ciclo Formativo de Grado
-        Superior en Desarrollo de Aplicaciones
-        Multiplataforma (DAM), en transición
-        hacia el sector tecnológico. Tras más de
-        20 años de experiencia profesional en los
-        ámbitos administrativo y de atención al
-        cliente, decidí reorientar mi carrera
-        profesional hacia el desarrollo de
-        software. Actualmente complemento mis
-        estudios con formación especializada en
-        desarrollo y tecnologías como DevOps.
-        Me motiva especialmente el aprendizaje
-        continuo, la resolución de problemas y
-        la aplicación de mis conocimientos en
-        proyectos reales aportando mis capacidades
-        de organización, adaptación y compromiso
-        adquiridos a lo largo de mi trayectoria
-        profesional.</p>
+      <p>{{ sobremi }}</p>
     </div>
 
-    <div>
+    <div class="experiencia">
       <h3>Experiencia profesional</h3>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          Hospitales Vithas
+          <p>Administrativa en recepción</p>
+          <p>2010 - 2023</p>
+        </li>
+        <li>
+          Quark Arquitectos
+          <p>Delineante</p>
+          <p>2008</p>
+        </li>
+        <li>
+          IBC Correduría de Seguros
+          <p>Auxiliar Administrativo</p>
+          <p>2001 - 2006</p>
+        </li>
       </ul>
     </div>
 
-    <div>
+    <div class="formacion">
       <h3>Formación</h3>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          CFGS en Desarrollo de Aplicaciones Multiplataforma
+          <p>CPIFP Alan Turing (Campanillas)</p>
+          <p>2024 - Actualidad</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Introducción Práctica a DevOps
+          <p>LemonCode Formación</p>
+          <p>2026</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          42 Málaga (Fundación Telefónica)
+          <p>Programa de formación de desarrollo de software</p>
+          <p>2025 - 2026</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Soporte de Tecnologías de la Información
+          <p>Certificación de Google</p>
+          <p>2024</p>
+        </li>
       </ul>
     </div>
 
-    <div>
+    <div class="tecnologias">
       <h3>Tecnologías</h3>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        @for (tecnologia of tecnologias; track tecnologia) {
+          <li>{{ tecnologia }}</li>
+        }
       </ul>
     </div>
   </main>
 </div>
 
-<footer>© CV desarrollado con Angular {{ this.fecha | date: 'dd/MM/yyyy' }}</footer>
+<footer>
+  © CV desarrollado con Angular {{ this.fecha | date: "dd/MM/yyyy" }}
+</footer>
