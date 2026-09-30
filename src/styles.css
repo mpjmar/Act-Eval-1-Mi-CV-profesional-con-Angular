@@ -10,8 +10,4 @@ html, body, app-root {
   height: 100%;
 }
 
-app-root {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Courier New', Courier, monospace;
-}
+

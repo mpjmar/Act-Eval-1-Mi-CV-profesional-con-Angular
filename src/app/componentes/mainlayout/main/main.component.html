@@ -1,0 +1,70 @@
+<div class="main">
+  <main>
+    <div class="sobre-mi">
+      <h3>Sobre mi</h3>
+      <p>{{ sobremi }}</p>
+    </div>
+
+    <div class="experiencia">
+      <h3>Experiencia profesional</h3>
+      <ul>
+        <li>
+          Hospitales Vithas
+          <p>Administrativa en recepción</p>
+          <p>2010 - 2023</p>
+        </li>
+        <li>
+          Quark Arquitectos
+          <p>Delineante</p>
+          <p>2008</p>
+        </li>
+        <li>
+          IBC Correduría de Seguros
+          <p>Auxiliar Administrativo</p>
+          <p>2001 - 2006</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="formacion">
+      <h3>Formación</h3>
+      <ul>
+        <li>
+          CFGS en Desarrollo de Aplicaciones Multiplataforma
+          <p>CPIFP Alan Turing (Campanillas)</p>
+          <p>2024 - Actualidad</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Introducción Práctica a DevOps
+          <p>LemonCode Formación</p>
+          <p>2026</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          42 Málaga (Fundación Telefónica)
+          <p>Programa de formación de desarrollo de software</p>
+          <p>2025 - 2026</p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Soporte de Tecnologías de la Información
+          <p>Certificación de Google</p>
+          <p>2024</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tecnologias">
+      <h3>Tecnologías</h3>
+      <ul>
+        @for (tecnologia of tecnologias; track tecnologia) {
+          <li>{{ tecnologia }}</li>
+        }
+      </ul>
+    </div>
+  </main>
+</div>

@@ -1,55 +1,8 @@
-header {
-  padding: 10px;
-
-  h1, h3 {
-    background-color:lightcyan;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 15px;
-    text-align: right;
-  }
-}
-
-.main {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-}
-
-aside {
-  width: 25%;
-  background-color: darkcyan;
-  color: white;
-  padding: 25px;
-  min-width: 320px;
+/* :host equivale a acceder al css del nivel superior de este componente (app-root) */
+:host {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  img {
-    text-align: center;
-    margin-bottom: 35px;
-  }
-
-  a {
-    color: azure;
-  }
-
-  a:hover {
-    color: crimson;
-  }
-
-  li {
-    padding: 10px;
-  }
+  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -76,9 +29,4 @@ ul {
   }
 }
 
-footer {
-  padding: 15px;
-  text-align: center;
-  background-color: darkcyan;
-  color: aliceblue;
-}
+

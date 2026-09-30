@@ -1,15 +1,24 @@
 import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './componentes/header/header.component';
+import { MainComponent } from './componentes/mainlayout/main/main.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DatePipe, NgOptimizedImage],
+  imports: [
+    RouterOutlet,
+    DatePipe,
+    NgOptimizedImage,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'cv';
   nombre = 'Paz Jiménez Martín';
   fecha = new Date();
   ciudad = 'Málaga';
