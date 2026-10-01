@@ -1,20 +1,11 @@
-import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './componentes/header/header.component';
-import { MainComponent } from './componentes/mainlayout/main/main.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { MainlayoutComponent } from './componentes/mainlayout/mainlayout.component';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-    DatePipe,
-    NgOptimizedImage,
-    HeaderComponent,
-    MainComponent,
-    FooterComponent,
-  ],
+  imports: [HeaderComponent, FooterComponent, MainlayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

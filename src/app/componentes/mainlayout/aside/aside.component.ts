@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-aside',
+  selector: 'aside',
   imports: [],
   templateUrl: './aside.component.html',
   styleUrl: './aside.component.css',
