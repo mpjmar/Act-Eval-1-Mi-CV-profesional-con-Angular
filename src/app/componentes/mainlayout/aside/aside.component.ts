@@ -10,5 +10,6 @@ export class AsideComponent {
   ciudad = 'Málaga';
   telefono = '630 61 70 32';
   mail = 'mpazjimenezmartin@gmail.com';
+  github = 'https://github.com/mpjmar';
   idiomas = ['Español', 'Inglés'];
 }
