@@ -21,6 +21,10 @@
     color: crimson;
   }
 
+  ul {
+    padding-left: 15px;
+  }
+
   li {
     padding: 10px;
   }

@@ -3,7 +3,7 @@ import { AsideComponent } from './aside/aside.component';
 import { MainComponent } from './main/main.component';
 
 @Component({
-  selector: 'mainlayout',
+  selector: 'app-mainlayout',
   imports: [AsideComponent, MainComponent],
   templateUrl: './mainlayout.component.html',
   styleUrl: './mainlayout.component.css',

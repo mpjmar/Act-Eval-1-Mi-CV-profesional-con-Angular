@@ -4,29 +4,3 @@
   flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
 }
-
-main {
-  flex: 1;
-  background-color: azure;
-  padding: 25px;
-}
-
-h3 {
-  padding-bottom: 10px;
-}
-
-div {
-  margin-bottom: 35px;
-}
-
-ul {
-  padding-left: 15px;
-}
-
-.experiencia, .formacion {
-  li {
-    padding: 5px;
-  }
-}
-
-
