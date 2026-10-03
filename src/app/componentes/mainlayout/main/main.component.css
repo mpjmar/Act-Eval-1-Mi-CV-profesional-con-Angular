@@ -1,7 +1,9 @@
-main {
+:host {
+  display: block;
   flex: 1;
+  min-width: 0;
   background-color: azure;
-  padding: 25px;
+  padding: 30px;
 }
 
 h3 {
