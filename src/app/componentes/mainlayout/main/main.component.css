@@ -2,8 +2,8 @@
   display: block;
   flex: 1;
   min-width: 0;
-  background-color: azure;
   padding: 30px;
+  background-color: azure;
 }
 
 h3 {
